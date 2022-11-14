@@ -38,6 +38,7 @@ class Cal
 int main()
 {
 	Cal op;
+
 	cout << "Addition       : " << op.add() << endl;
 	cout << "Subtraction    : " << op.sub() << endl;
 	cout << "Multiplication : " << op.mul() << endl;

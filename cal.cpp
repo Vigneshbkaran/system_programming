@@ -9,28 +9,28 @@ class Cal
 	public:
 		Cal()
 		{
-			//int a = 10, b = 2;
-                        cout << "CALCULATOR " << endl;
+			a = 10;
+			b = 2;
 		}
 
-		void add(int a ,int b)
+		int add()
 		{
-			cout << "Addition : " << a+b << endl;
+			return a+b ;
 		}
 
-		void sub(int a,int b)
+		int sub()
 		{
-			cout << "Subtraction : " << a-b << endl;
+			return a-b ;
 		}
 		
-		void mul(int a, int b)
+		int mul()
 		{
-			cout << "Multiplication : " << a*b << endl;
+		    return a*b ;
 		}
 
-		void div(int a, int b)
+		int div()
 		{
-			cout << "Division : "<< a/b <<endl;
+			return a/b ;
 		}
 		
 };
@@ -38,10 +38,10 @@ class Cal
 int main()
 {
 	Cal op;
-	op.add(10,2);
-        op.sub(10,2);
-        op.mul(10,2);
-        op.div(10,2);
+	cout << "Addition       : " << op.add() << endl;
+	cout << "Subtraction    : " << op.sub() << endl;
+	cout << "Multiplication : " << op.mul() << endl;
+	cout << "Division       : " << op.div() << endl;
 	return 0;
 }
 
